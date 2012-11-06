@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA14D2FE163F3A9D0041850E /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA14D2FB163F38470041850E /* gtest.framework */; };
+		AA14D300163F3D690041850E /* Vector_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA14D2FF163F3D690041850E /* Vector_unittest.cpp */; };
+		AA14D305163F3FBF0041850E /* gtest_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA14D303163F3FBF0041850E /* gtest_main.cpp */; };
+		AA14D30A16437B6D0041850E /* Point_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA14D30916437B6D0041850E /* Point_unittest.cpp */; };
+		AA14D30F164388310041850E /* Ray_unittest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA14D30D164388310041850E /* Ray_unittest.cpp */; };
+		AA14D3131644846B0041850E /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA14D3121644846B0041850E /* OpenCL.framework */; };
+		AA14D3181644C04F0041850E /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA14D3161644C04F0041850E /* Shape.cpp */; };
+		AA18B73E16378E34000FA7EA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA18B73D16378E34000FA7EA /* main.cpp */; };
+		AA18B74016378E34000FA7EA /* RayTracer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA18B73F16378E34000FA7EA /* RayTracer.1 */; };
+		AA18B761163E4A8A000FA7EA /* RayTracer_UnitTests.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA18B760163E4A8A000FA7EA /* RayTracer_UnitTests.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA18B73716378E34000FA7EA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				AA18B74016378E34000FA7EA /* RayTracer.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		AA18B759163E4A8A000FA7EA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				AA18B761163E4A8A000FA7EA /* RayTracer_UnitTests.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA14D2FB163F38470041850E /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = "../googletest-read-only/xcode/DerivedData/gtest/Build/Products/Debug/gtest.framework"; sourceTree = "<group>"; };
+		AA14D2FF163F3D690041850E /* Vector_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector_unittest.cpp; sourceTree = "<group>"; };
+		AA14D303163F3FBF0041850E /* gtest_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_main.cpp; sourceTree = "<group>"; };
+		AA14D30816437B490041850E /* Point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point.h; sourceTree = "<group>"; };
+		AA14D30916437B6D0041850E /* Point_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Point_unittest.cpp; sourceTree = "<group>"; };
+		AA14D30C1643881E0041850E /* Ray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ray.h; sourceTree = "<group>"; };
+		AA14D30D164388310041850E /* Ray_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ray_unittest.cpp; sourceTree = "<group>"; };
+		AA14D3121644846B0041850E /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		AA14D3161644C04F0041850E /* Shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shape.cpp; sourceTree = "<group>"; };
+		AA14D3171644C04F0041850E /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		AA18B73916378E34000FA7EA /* RayTracer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RayTracer; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA18B73D16378E34000FA7EA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AA18B73F16378E34000FA7EA /* RayTracer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RayTracer.1; sourceTree = "<group>"; };
+		AA18B747163E3FDD000FA7EA /* Vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
+		AA18B75B163E4A8A000FA7EA /* RayTracer.UnitTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RayTracer.UnitTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA18B760163E4A8A000FA7EA /* RayTracer_UnitTests.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RayTracer_UnitTests.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA18B73616378E34000FA7EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA14D3131644846B0041850E /* OpenCL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA18B758163E4A8A000FA7EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA14D2FE163F3A9D0041850E /* gtest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA14D306164377A90041850E /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				AA14D30B164388000041850E /* Ray */,
+				AA14D30716437B280041850E /* Point */,
+				AA18B746163E3FBA000FA7EA /* Vector */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		AA14D30716437B280041850E /* Point */ = {
+			isa = PBXGroup;
+			children = (
+				AA14D30816437B490041850E /* Point.h */,
+				AA14D30916437B6D0041850E /* Point_unittest.cpp */,
+			);
+			name = Point;
+			sourceTree = "<group>";
+		};
+		AA14D30B164388000041850E /* Ray */ = {
+			isa = PBXGroup;
+			children = (
+				AA14D30C1643881E0041850E /* Ray.h */,
+				AA14D30D164388310041850E /* Ray_unittest.cpp */,
+			);
+			name = Ray;
+			sourceTree = "<group>";
+		};
+		AA14D3151644C0230041850E /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				AA14D3161644C04F0041850E /* Shape.cpp */,
+				AA14D3171644C04F0041850E /* Shape.h */,
+			);
+			name = Shapes;
+			sourceTree = "<group>";
+		};
+		AA18B72E16378E34000FA7EA = {
+			isa = PBXGroup;
+			children = (
+				AA14D2FB163F38470041850E /* gtest.framework */,
+				AA14D3121644846B0041850E /* OpenCL.framework */,
+				AA14D306164377A90041850E /* Math */,
+				AA18B73A16378E34000FA7EA /* Products */,
+				AA18B73C16378E34000FA7EA /* RayTracer */,
+				AA18B75D163E4A8A000FA7EA /* RayTracer.UnitTests */,
+				AA14D3151644C0230041850E /* Shapes */,
+			);
+			sourceTree = "<group>";
+		};
+		AA18B73A16378E34000FA7EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA18B73916378E34000FA7EA /* RayTracer */,
+				AA18B75B163E4A8A000FA7EA /* RayTracer.UnitTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA18B73C16378E34000FA7EA /* RayTracer */ = {
+			isa = PBXGroup;
+			children = (
+				AA18B73D16378E34000FA7EA /* main.cpp */,
+				AA18B73F16378E34000FA7EA /* RayTracer.1 */,
+			);
+			path = RayTracer;
+			sourceTree = "<group>";
+		};
+		AA18B746163E3FBA000FA7EA /* Vector */ = {
+			isa = PBXGroup;
+			children = (
+				AA18B747163E3FDD000FA7EA /* Vector.h */,
+				AA14D2FF163F3D690041850E /* Vector_unittest.cpp */,
+			);
+			name = Vector;
+			sourceTree = "<group>";
+		};
+		AA18B75D163E4A8A000FA7EA /* RayTracer.UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA18B760163E4A8A000FA7EA /* RayTracer_UnitTests.1 */,
+				AA14D303163F3FBF0041850E /* gtest_main.cpp */,
+			);
+			path = RayTracer.UnitTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA18B73816378E34000FA7EA /* RayTracer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA18B74316378E34000FA7EA /* Build configuration list for PBXNativeTarget "RayTracer" */;
+			buildPhases = (
+				AA18B73516378E34000FA7EA /* Sources */,
+				AA18B73616378E34000FA7EA /* Frameworks */,
+				AA18B73716378E34000FA7EA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RayTracer;
+			productName = RayTracer;
+			productReference = AA18B73916378E34000FA7EA /* RayTracer */;
+			productType = "com.apple.product-type.tool";
+		};
+		AA18B75A163E4A8A000FA7EA /* RayTracer.UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA18B762163E4A8A000FA7EA /* Build configuration list for PBXNativeTarget "RayTracer.UnitTests" */;
+			buildPhases = (
+				AA18B757163E4A8A000FA7EA /* Sources */,
+				AA18B758163E4A8A000FA7EA /* Frameworks */,
+				AA18B759163E4A8A000FA7EA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RayTracer.UnitTests;
+			productName = RayTracer.UnitTests;
+			productReference = AA18B75B163E4A8A000FA7EA /* RayTracer.UnitTests */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA18B73016378E34000FA7EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Steven Iannelli";
+			};
+			buildConfigurationList = AA18B73316378E34000FA7EA /* Build configuration list for PBXProject "RayTracer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA18B72E16378E34000FA7EA;
+			productRefGroup = AA18B73A16378E34000FA7EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA18B73816378E34000FA7EA /* RayTracer */,
+				AA18B75A163E4A8A000FA7EA /* RayTracer.UnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA18B73516378E34000FA7EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA18B73E16378E34000FA7EA /* main.cpp in Sources */,
+				AA14D3181644C04F0041850E /* Shape.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA18B757163E4A8A000FA7EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA14D300163F3D690041850E /* Vector_unittest.cpp in Sources */,
+				AA14D305163F3FBF0041850E /* gtest_main.cpp in Sources */,
+				AA14D30A16437B6D0041850E /* Point_unittest.cpp in Sources */,
+				AA14D30F164388310041850E /* Ray_unittest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA18B74116378E34000FA7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AA18B74216378E34000FA7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AA18B74416378E34000FA7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../googletest-read-only/xcode/DerivedData/gtest/Build/Products/Debug\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA18B74516378E34000FA7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../googletest-read-only/xcode/DerivedData/gtest/Build/Products/Debug\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AA18B763163E4A8A000FA7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../googletest-read-only/xcode/DerivedData/gtest/Build/Products/Debug\"",
+				);
+				New_Setting = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA18B764163E4A8A000FA7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../googletest-read-only/xcode/DerivedData/gtest/Build/Products/Debug\"",
+				);
+				New_Setting = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA18B73316378E34000FA7EA /* Build configuration list for PBXProject "RayTracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA18B74116378E34000FA7EA /* Debug */,
+				AA18B74216378E34000FA7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA18B74316378E34000FA7EA /* Build configuration list for PBXNativeTarget "RayTracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA18B74416378E34000FA7EA /* Debug */,
+				AA18B74516378E34000FA7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA18B762163E4A8A000FA7EA /* Build configuration list for PBXNativeTarget "RayTracer.UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA18B763163E4A8A000FA7EA /* Debug */,
+				AA18B764163E4A8A000FA7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA18B73016378E34000FA7EA /* Project object */;
+}
